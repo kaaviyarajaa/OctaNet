@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your E-Commerce Store</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(45deg, #3498db, #e74c3c, #27ae60, #e74c3c);
+      background-size: 400% 400%;
+      animation: gradientAnimation 15s infinite;
+      color: #fff;
+      overflow-x: hidden; /* Prevent horizontal scrolling on small screens */
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    header {
+      background-color: #333;
+      background-image: linear-gradient(45deg, #3498db, #e74c3c, #27ae60, #e74c3c);
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #555;
+      transform: scale(1.1);
+    }
+
+    section {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      color: #333;
+    }
+
+    h2, h3, p {
+      color: #333;
+      text-align: center;
+    }
+
+    .product {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .product-item {
+      max-width: 300px;
+      margin: 20px;
+      padding: 15px;
+      background-color: #eee;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .product-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #2980b9;
+      transform: scale(1.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your E-Commerce Store</h1>
+    <p>Discover the Latest Trends in Fashion</p>
+  </header>
+
+  <nav>
+    <a href="#featured">Featured</a>
+    <a href="#about us">About us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="featured">
+    <h2>Featured Products</h2>
+    <div class="product">
+      <div class="product-item">
+        <img class="product-image" src="product1.jpg" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#" class="cta-button">View Details</a>
+      </div>
+
+      <div class="product-item">
+        <img class="product-image" src="product2.jpg" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>Description of Product 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="#" class="cta-button">View Details</a>
+      </div>
+
+      <div class="product-item">
+        <img class="product-image" src="product3.jpg" alt="Product 3">
+        <h3>Product 3</h3>
+        <p>Description of Product 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        <a href="#" class="cta-button">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="About us">
+    <h2>About us</h2>
+    <div class="product">
+      <!-- Similar structure as Featured Products section -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="product">
+        <p>Contact Number: 0000000000</p>
+        <p>Email: info@yourstore.com</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Your E-Commerce Store | Contact: info@yourstore.com | Follow Us: @YourStore</p>
+  </footer>
+</body>
+</html>
